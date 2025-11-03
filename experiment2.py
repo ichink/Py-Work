@@ -1,6 +1,8 @@
 from clearml import Task
 import random, time
 
+task = Task.init(project_name="demo-project", task_name="experiment2--")
+
 # ハイパーパラメータを登録
 params = {"epochs": 5, "lr": 0.5}
 task.connect(params)
