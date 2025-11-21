@@ -45,7 +45,7 @@ def main():
         task_type=Task.TaskTypes.training,
     )
     # argparseのハイパーパラメータをUIに出す
-    task.connect(args, name="hyperparameters")
+    # task.connect(args, name="hyperparameters")
     logger = task.get_logger()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
